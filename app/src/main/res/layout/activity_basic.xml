@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".BasicActivity">
+    tools:context=".activity.operator.BasicActivity">
     <TextView
         android:id="@+id/tvLog"
         android:textSize="18sp"

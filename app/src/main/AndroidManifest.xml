@@ -2,33 +2,64 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rxjavademo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".activity.dagger2.App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OperatorMenuActivity"></activity>
-        <activity android:name=".SkipLastActivity" />
-        <activity android:name=".SkipActivity" />
-        <activity android:name=".DistinctActivity" />
-        <activity android:name=".FilterActivity" />
-        <activity android:name=".BufferActivity" />
-        <activity android:name=".ConcatMapActivity" />
-        <activity android:name=".FlatMapActivity" />
-        <activity android:name=".RangeActivity" />
-        <activity android:name=".FromArrayActivity" />
-        <activity android:name=".BasicActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".CreateActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.dagger2.activity.SecondActivity"></activity>
+        <activity android:name=".activity.dagger2.activity.Dagger2Activity" />
+        <activity
+            android:name=".activity.room.RoomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.tmdb_project.MovieDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.tmdb_project.MovieActivity" />
+        <activity
+            android:name=".activity.todo_project.activity.AddToDoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.todo_project.activity.ToDoMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.RxBindingActivity" />
+        <activity android:name=".activity.subject.PublishObservableActivity" />
+        <activity android:name=".activity.subject.BehaviorObservableActivity" />
+        <activity android:name=".activity.subject.AsyncObservableActivity" />
+        <activity android:name=".activity.subject.ReplayObservableActivity" />
+        <activity android:name=".activity.subject.PublishNextActivity" />
+        <activity android:name=".activity.subject.BehaviorNextActivity" />
+        <activity android:name=".activity.subject.AsyncNextActivity" />
+        <activity android:name=".activity.subject.ReplayNextActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.SubjectMenuActivity" />
+        <activity android:name=".activity.OperatorMenuActivity" />
+        <activity android:name=".activity.operator.SkipLastActivity" />
+        <activity android:name=".activity.operator.SkipActivity" />
+        <activity android:name=".activity.operator.DistinctActivity" />
+        <activity android:name=".activity.operator.FilterActivity" />
+        <activity android:name=".activity.operator.BufferActivity" />
+        <activity android:name=".activity.operator.ConcatMapActivity" />
+        <activity android:name=".activity.operator.FlatMapActivity" />
+        <activity android:name=".activity.operator.RangeActivity" />
+        <activity android:name=".activity.operator.FromArrayActivity" />
+        <activity android:name=".activity.operator.BasicActivity" />
+        <activity android:name=".activity.operator.MapActivity" />
+        <activity android:name=".activity.operator.CreateActivity" />
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>
